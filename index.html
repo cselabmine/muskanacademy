@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskan Academy | Learn & Grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Muskan <span>Academy</span></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to <span>Muskan Academy</span></h1>
+            <h2>Learn Today, Lead Tomorrow!</h2>
+            <p>
+                Education is the key to success.
+                Join Muskan Academy and build a bright future
+                with knowledge, confidence and skills.
+            </p>
+            <a href="#admission" class="btn">Join Now</a>
+            <a href="#courses" class="btn secondary">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Our Academy</h2>
+
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=700"
+                     alt="Students in academy">
+            </div>
+
+            <div class="about-text">
+                <h3>Welcome to Muskan Academy</h3>
+                <p>
+                    Muskan Academy is dedicated to providing quality
+                    education and helping students achieve their goals.
+                    We believe every student has the potential to succeed.
+                </p>
+                <p>
+                    Our experienced teachers, friendly environment
+                    and practical learning methods help students
+                    develop knowledge and confidence.
+                </p>
+                <a href="#contact" class="btn">Know More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2 class="section-title">Our Popular Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <div class="course-icon">💻</div>
+                <h3>Computer Courses</h3>
+                <p>Learn computer fundamentals, MS Office,
+                   programming and digital skills.</p>
+                <a href="#admission">Enroll Now →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">📚</div>
+                <h3>School Tuition</h3>
+                <p>Quality education and personal guidance
+                   for school students.</p>
+                <a href="#admission">Enroll Now →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🗣️</div>
+                <h3>English Speaking</h3>
+                <p>Improve your English communication,
+                   grammar and confidence.</p>
+                <a href="#admission">Enroll Now →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">👨‍💻</div>
+                <h3>Programming</h3>
+                <p>Learn HTML, CSS, JavaScript, C
+                   and other programming languages.</p>
+                <a href="#admission">Enroll Now →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features">
+        <h2 class="section-title">Why Choose Muskan Academy?</h2>
+
+        <div class="feature-container">
+            <div class="feature">
+                <h3>🎓</h3>
+                <h4>Expert Teachers</h4>
+                <p>Learn from experienced educators.</p>
+            </div>
+
+            <div class="feature">
+                <h3>📖</h3>
+                <h4>Quality Education</h4>
+                <p>Easy and effective learning methods.</p>
+            </div>
+
+            <div class="feature">
+                <h3>🏆</h3>
+                <h4>Student Success</h4>
+                <p>Focus on skills and academic growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form -->
+    <section class="admission" id="admission">
+        <h2 class="section-title">Admission Form</h2>
+
+        <form id="admissionForm">
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+
+            <input type="tel" id="phone" placeholder="Enter Your Phone Number"
+                   pattern="[0-9]{10}" maxlength="10" required>
+
+            <select id="course" required>
+                <option value="">Select Your Course</option>
+                <option>Computer Courses</option>
+                <option>School Tuition</option>
+                <option>English Speaking</option>
+                <option>Programming</option>
+            </select>
+
+            <textarea id="message" placeholder="Your Message"></textarea>
+
+            <button type="submit" class="btn">Submit Admission</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-info">
+            <p>📍 Address: Add Your Academy Address</p>
+            <p>📞 Phone: Add Your Contact Number</p>
+            <p>✉️ Email: muskanacademy@example.com</p>
+            <p>⏰ Timing: Monday - Saturday</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Muskan Academy</h2>
+        <p>Learn Today, Lead Tomorrow!</p>
+        <p>© 2026 Muskan Academy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
